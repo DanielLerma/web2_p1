@@ -1,0 +1,13 @@
+{
+    "include": [
+        "src/scripts/**/*.ts"
+    ],
+    "exclude": [
+        "src/scripts/**/*.spec.ts"
+    ],
+    "compilerOptions": {
+        "target": "es6",
+        "outDir": "scripts",
+        "moduleResolution": "node"
+    }
+}

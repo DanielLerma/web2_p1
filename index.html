@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr&aacute;ctica 1</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <style>
+        .grid>div {
+            border: solid 1px black;
+            background: whitesmoke;
+            padding: 70px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1>News web app</h1>
+    </header>
+    <div class="grid">
+        <script type="text/x-handlebars-template" id="entry-template">
+            <!-- {{#each news}}
+            <div class="news-item">
+                <img src="{{urlToImage}}" />
+                <h2>{{title}}</h2>
+                <p>{{description}}</p>
+                <a href="{{url}}" target="_blank">Ver más</a>
+            </div>
+            {{/each}} -->
+        <div class="entry">
+            <h1>{{title}}</h1>
+            <div class="body">{{body}}</div>
+        </div>
+        </script>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script type="module" src="assets/scripts/index.js"></script>
+</body>
+
+</html>

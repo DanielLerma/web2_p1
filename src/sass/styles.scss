@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'layout';
+@import 'grid';
+
+a {
+    color: $primary-color;
+}
+
+.button {
+    padding: 6px 12px;
+    border: solid $dark-color 1px;
+    border-radius: 4px;
+}
+
+.button-primary {
+    @extend .button;
+    background-color: $primary-color;
+    color: $contrast-color;
+}
+
+.button-secondary {
+    @extend .button;
+    background-color: $secondary-color;
+    color: $contrast-color;
+}

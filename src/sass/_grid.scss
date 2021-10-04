@@ -13,7 +13,7 @@ $num-cols-list: 1, 2, 3, 4, 6, 8, 9, 12;
     #{$position}: 0;
 }
 
-.grid {
+.row {
     > div[class*=col-] {
         float: left;
         min-height: 1px;
@@ -38,7 +38,7 @@ $num-cols-list: 1, 2, 3, 4, 6, 8, 9, 12;
 
 
 @include tablet {
-    .grid {
+    .row {
         // arreglo.forEach(item => {})
         @each $size in $num-cols-list {
             > .col-md-#{$size} {
@@ -49,7 +49,7 @@ $num-cols-list: 1, 2, 3, 4, 6, 8, 9, 12;
 }
 
 @include desktop {
-    .grid {
+    .row {
         // arreglo.forEach(item => {})
         @each $size in $num-cols-list {
             > .col-lg-#{$size} {

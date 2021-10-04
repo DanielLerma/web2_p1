@@ -23,3 +23,17 @@ a {
     background-color: $secondary-color;
     color: $contrast-color;
 }
+
+.title {
+    border: solid 1px black;
+    background-color: whitesmoke;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.description {
+    border: solid 1px black;
+    background-color: #e8e8e4;
+    padding: 70px 0;
+    text-align: center;
+}
